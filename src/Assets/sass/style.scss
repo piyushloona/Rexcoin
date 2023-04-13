@@ -1,0 +1,42 @@
+:root {
+    --black: black;
+    --header_bg: #111111;
+    --primary: #feca5f;
+    --white: white;
+    // --link:#fd5100;
+    --gray: gray;
+    --green: #1fa661;
+    --header_light: #181515;
+    --log_color: #07a3ff;
+    --light_grey: #f3f3f3;
+    --blue_light:rgb(19, 19, 248);
+    --light_black:#3d404f;
+    --text:rgb(61 64 79);
+  }
+
+
+  @mixin display($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+  }
+
+
+
+
+@import './header.scss';
+@import './crypto.scss';
+@import './private.scss';
+@import './advantages.scss';
+
+@import './transaction.scss';
+
+@import './afordable.scss';
+
+@import './Team.scss';
+
+@import './media.scss';
+
+@import './donate.scss';
+
+@import './footer.scss';

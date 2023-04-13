@@ -1,0 +1,59 @@
+.transaction{
+    // margin-top: 60px;
+    // padding: 30px 20px;
+    .container{
+        max-width: 1140px;
+        .row{
+            padding: 30px 10px;
+            @include display(center,center);
+            .transaction_left{
+                padding: 30px 10px;
+                .alarm_icon{
+                    font-size: 80px;
+                    color: var(--gray);
+                    opacity: 0.3;
+                }
+                h1{
+                    color: var(  --light_black);
+                    font-weight: bold;
+                    font-size: 42px;
+                    margin-top: 14px;
+                    @media screen and (max-width:992px){
+                        font-size: 32px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    letter-spacing: 0.2px;
+                    line-height: 24px;
+                    margin-top: 15px;
+                    @media screen and (max-width:992px){
+                        font-size: 12px;
+                    }
+                }
+                .find{
+                    background: var(--green);
+                    transition: all 0.4s linear;
+                    border: none;
+                    padding: 18px 38px;
+                    color: var(--white);
+                    border-radius: 36px;
+                    margin-top: 20px;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: var(--light_black);
+                    }
+                    // @media (max-width:250px){
+                    //     padding:16px 30px;
+                    // }
+                }
+            }
+            .alarm{
+                padding:30px 10px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

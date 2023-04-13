@@ -1,0 +1,154 @@
+.affordable {
+  position: relative;
+ 
+  &::after {
+    background-image: url("../images/chart_back.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: -299px;
+    z-index: -11;
+  }
+  .container {
+    max-width: 1140px;
+    .row {
+      padding: 20px;
+      .left {
+        padding: 20px;
+        img{
+          width: 100%;
+        }
+      }
+      .right {
+        // padding: 20px;
+        .desktop {
+          font-size: 54px;
+          color: var(--gray);
+          opacity: 0.6;
+        }
+        h1 {
+          color: var(--text);
+          font-weight: 700;
+          margin-top: 32px;
+          @media screen and (max-width:992px) {
+              font-size: 31px;
+          };
+         
+          @media screen and (max-width:410px) {
+            font-size: 25px;
+        }
+        br{
+          @media(max-width: 300px){
+            display:none;
+            font-size: 20px;
+          }}
+        }
+        p {
+          margin-top: 20px;
+          line-height: 24px;
+          br{
+          @media screen and (max-width:1200px) {
+            display: none;
+          }
+          }
+        }
+        .market {
+          @include display(center, center);
+          gap: 50px;
+          margin-top: 40px;
+          padding: 40px;
+          background: var(--light_grey);
+          border-radius: 20px;
+          opacity: 0.6;
+          @media screen and (max-width:1200px) {
+           flex-direction: column;
+           align-items: start;
+          }
+          .cap {
+            .pp {
+              @include display(initial, center);
+              .dollar {
+                font-size: 47px;
+                color: var(--green);
+                margin: 4px 12px;
+                opacity: 0.6;
+              }
+              .logo {
+                h4 {
+                  font-size: 32px;
+                  font-weight: normal;
+                  margin: 0px;
+                  color: var(--black);
+                }
+                p {
+                  margin: 0px;
+                  color: var(--gray);
+                  font-weight: bold;
+                  font-size: 14px;
+                  opacity: 0.6;
+                }
+              }
+            }
+          }
+
+          .user {
+            .pp {
+              @include display(initial, center);
+              .dollar {
+                font-size: 47px;
+                color: var(--green);
+                margin: 4px 12px;
+                opacity: 0.6;
+              }
+              .logo {
+                h4 {
+                  font-size: 32px;
+                  font-weight: normal;
+                  margin: 0px;
+                  color: var(--black);
+                }
+                p {
+                  margin: 0px;
+                  color: var(--gray);
+                  font-weight: bold;
+                  font-size: 14px;
+                  opacity: 0.6;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .price {
+      background: var(--header_light);
+      position: relative;
+      z-index: 999;
+      padding: 80px 50px;
+      border-radius: 30px;
+      @media (max-width:576px){
+        padding: 29px;
+      }
+      h2 {
+        color: var(--white);
+        font-size: 35px;
+        font-weight: bold;
+        @media (max-width:310px){
+            font-size: 27px;
+        }
+      }
+      img {
+        border-radius: 20px;
+        margin-top: 42px;
+        width: 100%;
+        @media (max-width:310px){
+          margin-top: 0px
+        };
+      }
+    }
+  }
+}

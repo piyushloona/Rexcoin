@@ -1,0 +1,99 @@
+.donate {
+  // margin-top: 59px;
+  // padding-top: 50px;
+  background: var(--header_light);
+  .container {
+    max-width: 1140px;
+    .row {
+      padding: 12px;
+      .donate_left {
+        padding: 20px;
+        // background: var(--white);
+        border-radius: 20px;
+        @media(max-width: 300px){
+         padding: 20px 5px;
+        }
+        h1 {
+          font-size: 29px;
+          color: var(--white);
+          font-weight: bold;
+          padding-bottom: 14px;
+          @media(max-width: 300px){
+            font-size: 17px;
+          }
+        }
+        p {
+          color: var(--gray);
+          margin-top: 10px;
+          font-weight: 600;
+          br{
+          @media(max-width: 768px){
+            display: none;
+          }}
+        }
+        .dollars {
+          @include display(center, space-between);
+          margin-top: 20px;
+        }
+        .for_range {
+          margin: 22px 0px;
+          margin-bottom: 0 !important;
+          width: 100%
+        }
+      }
+      .donate_right {
+        @include display(center, center);
+        height: 100%;
+        margin: auto;
+        flex-direction: column;
+        .want {
+          border: none;
+          background: var(--white);
+          border-radius: 40px;
+          position: relative;
+          padding: 20px 37px;
+          font-weight: bold;
+          font-size: 16px;
+          &::before {
+            content: " ";
+            pointer-events: none;
+            display: block !important;
+            position: absolute;
+            position: absolute;
+            z-index: 2;
+            bottom: -10px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            opacity: 1;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 12px 12px 0px 12px;
+            border-color: #ffffff transparent transparent transparent;
+            border-bottom-color: white;
+          }
+          @media (max-width:350px){
+            padding: 20px 13px;
+          }
+        }
+        .develop{
+            color: var(--white);
+            background: var(--log_color);
+            padding: 20px 37px;
+            border-radius: 30px;
+            border: none;
+            font-weight: bold;
+            margin-top: 24px;
+
+            @media (max-width:350px){
+              padding: 20px 16px;
+            }
+
+        }
+        
+      }
+    }
+  }
+}

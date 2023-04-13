@@ -1,0 +1,97 @@
+.media{
+    margin-top: 30px;
+    // padding: 30px;
+    position: relative;
+    // padding-left: 0px;
+    &::after{
+
+        position: absolute;
+        background-image: url('../images/team_back.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 680px;
+        width: 100%;
+        top: -123px;
+        content: "";
+        z-index: -11;
+        left: 0;
+    }
+    .container{
+        max-width: 1140px;
+    h2{
+        color: var(--text);
+        font-size: 44px;
+        font-weight: bold;
+        text-align: center;
+        @media (max-width:300px) {
+                font-size: 31px;
+        }
+    }
+    .mySwiper{
+        margin-top: 40px;
+        .swiper-wrapper{
+            .swiper-slide{
+                .villatex{
+                    padding: 56px;
+                    background: var(--white);
+                    border-radius: 20px;
+                    cursor: grab;
+                    border: 1px solid var( --light_grey);
+                    transition: all 0.4s linear;
+                    @media screen and (max-width:410px){
+                        padding: 28px;
+                    }
+                    &:hover{    
+                        transform: translateY(-10px);
+                    }
+                    img{
+                        @media screen and (max-width:410px){
+                            width: 120px;
+                        }
+                    }
+                    p{
+                        color:var(--text);
+                        line-height: 27px;
+                        margin-top: 20px;
+                        font-size: 14px;
+                        font-family:Georgia, 'Times New Roman', Times, serif;
+                        @media screen and (max-width:410px){
+                          font-size: 12px;
+                        }
+                    }
+                    .jackson{
+                        @include display(initial,initial);
+                        margin-top: 40px;
+                        img{
+                            border-radius: 50%;
+                            height: 50px;
+                            @media screen and (max-width:410px){
+                                width: 60px;
+                            }
+                        }
+                        .student{
+                            padding: 0 10px;
+                            h3{
+                                margin: 0;
+                                font-size: 17px;
+                                color: var(--text);
+                                font-weight: bold;
+                                @media screen and (max-width:410px){
+                                 font-size: 12px;
+                                }
+                            }
+                            p{
+                                margin: 0;
+                                color: var(--gray);
+                                font-size: 11px;
+                                font-weight: bold;
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}

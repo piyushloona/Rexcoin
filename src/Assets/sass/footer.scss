@@ -1,0 +1,90 @@
+.footer {
+  background: var(--header_bg);
+  padding: 70px 20px;
+  @media(max-width: 300px){
+    padding: 70px 8px;
+  }
+  .container {
+    max-width: 1140px;
+    .row {
+      .logo {
+        img {
+          height: 47px;
+        }
+      }
+      .get {
+        @media (max-width:1200px){
+          border-bottom: 1px solid var(--gray);;
+        }
+        h2 {
+          color: var(--white);
+          font-size: 27px;
+          padding-top: 9px;
+          margin-bottom: 25px;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+            li{
+                color: var(--white);
+                padding: 6px 0;
+                font-weight: 600;
+                font-size: 15px;
+                transition: all 0.4s linear;
+                a{
+                    text-decoration: none;
+                    color: var(--white);
+                    transition: all 0.4s linear;
+                    &:hover{
+                        color: var(--log_color);
+                        cursor: pointer;
+                        
+                    }
+                }
+               
+
+            }
+        }
+      }
+    }
+
+    .last{
+        @include display(center,space-between);
+        margin-top: 40px;
+        @media(max-width:576px){
+          flex-direction: column;
+        
+        }
+        p{
+            color: var(--gray);
+            font-weight: 600;
+
+            @media (max-width:300px){
+              text-align: center;
+            }
+            
+        }
+        .for_icon{
+            margin-right: 110px;
+            margin-top: -14px;
+            .facebook{
+                color: var(--white);
+                margin: 0 11px;
+                opacity: 0.4;
+                transition: all 0.4s linear;
+                &:hover{
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+            @media (max-width:300px){
+              margin: 0px;;
+            }
+            @media (max-width:576px){
+              margin: 0px;
+              padding: 0;
+            }
+        }
+    }
+  }
+}
